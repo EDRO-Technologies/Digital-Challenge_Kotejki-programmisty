@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "missing persons portal",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDRO-Technologies/Digital-Challenge_Kotejki-programmisty.git"
+  },
+  "author": "Casha28, Kirby, godrrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EDRO-Technologies/Digital-Challenge_Kotejki-programmisty/issues"
+  },
+  "homepage": "https://github.com/EDRO-Technologies/Digital-Challenge_Kotejki-programmisty#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.3",
+    "nodemon": "^3.0.1"
+  }
+}

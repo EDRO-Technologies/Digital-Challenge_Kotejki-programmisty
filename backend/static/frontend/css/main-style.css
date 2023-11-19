@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3rem 3rem 0 3rem;
+    gap: 1.5rem;
+}
+
+.header__logo-pic {
+    height: 11rem;
+}
+
+.header__logo-link:hover .header__logo-pic {
+    filter: drop-shadow(0 0 0.2rem #0084C9);
+}
+
+.header__logo-link:hover .header__desc-1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__logo-link:hover .header__desc-2 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__desc-1 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+.header__desc-2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.3rem;
+}
+
+.header__nav {
+    display: flex;
+    border-radius: 1.25rem;
+    background: #ADD0EB;
+    padding: 1.7rem;
+    gap: 1.7rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.nav__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header__nav-button {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.nav-button__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2F83C5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1.25rem;
+    padding: 0.3rem;
+}
+
+/* Links inside the dropdown */
+.nav-button__dropdown-content a {
+    color: aliceblue;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 1.25rem;
+}
+
+/* Change color of dropdown links on hover */
+.nav-button__dropdown-content a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Show the dropdown menu on hover */
+.nav__dropdown:hover .nav-button__dropdown-content {
+    display: block;
+}
+
+.header__profile {
+    margin-left: 11rem;
+}
+
+.header__profile-img {
+    width: 6.66rem;
+    height: 6.723rem;
+    flex-shrink: 0;
+}
+
+.header__profile:hover .header__profile-img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header__profile:hover .header__profile-desc {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__profile-desc {
+    color: #000;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.8rem;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin: 2rem 3rem 2rem 3rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.main-index__description {
+    margin-top: 2rem;
+}
+
+.main-registration__form {
+    width: 99.9375rem;
+    height: 47.75rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #ADD0EB;
+    margin-left: 27rem;
+}
+
+.main-registration__form-input {
+    width: 31.25rem;
+    height: 5.625rem;
+    border-radius: 1.25rem;
+    background: #FFF;
+    outline: 0;
+    border: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.main-registration__form-input::placeholder {
+    color: #B1B1B1;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#registration__form-input1 {margin-top: 6rem; margin-left: 11rem;}
+
+#registration__form-input2 {margin-top: 6rem; margin-left: 11rem;}
+
+#registration__form-input3 {margin-top: 4rem; margin-left: 11rem;}
+
+#registration__form-input4 {margin-top: 4rem; margin-left: 11rem;}
+
+.main-registration__submit-button {
+    background-color: #2F83C5;
+    color: aliceblue;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 12.5rem;
+    margin-left: 36rem;
+    transition: transform 0.3s;
+}
+
+.main-registration__submit-button:hover {
+    transform: scale(120%);
+}
+
+.footer {
+    display: flex;
+    background: #2F83C5;
+    flex: 0 0 auto;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer__logo {
+    margin: 2rem 0 2rem 5rem;
+}
+
+.footer__desc-1 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+.footer__desc-2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.3rem;
+}
+
+.footer__main-contacts {
+    display: block;
+}
+
+.footer__telephone-1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer__telephone-2 {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.footer__mail {
+    margin-top: 1.5rem;
+}
+
+.footer__mail-1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer__mail-2 {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.footer__logo-pic {
+    height: 11rem;
+}
+
+.footer__logo-link:hover .footer__logo-pic {
+    filter: drop-shadow(0 0 0.1rem #ffffff);
+}
+
+.footer__social {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1.9rem;
+}
+
+.footer__social-img {
+    width: 2.6rem;
+}
+
+.footer__copyright {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 3rem;
+}
